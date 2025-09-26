@@ -1,0 +1,47 @@
+# === Java / Maven ===
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven wrapper
+.mvn/
+mvnw
+mvnw.cmd
+
+# === Spring Boot / Config ===
+# Keep application.yml in repo but override secrets in application-local.yml (ignored)
+application-local.yml
+application-*.yml
+
+# === Environment / Secrets ===
+*.env
+*.env.*
+.envrc
+
+# === Logs ===
+*.log
+logs/
+*.out
+
+# === OS / Editor / IDE ===
+# Mac / Linux
+.DS_Store
+.idea/
+*.iml
+*.swp
+*.swo
+
+# VSCode
+.vscode/
+.history/
+
+# === Docker ===
+/docker-compose.override.yml
+/docker-compose.local.yml
+
+# === Node (when you add frontend) ===
+frontend/node_modules/
+frontend/dist/
+frontend/.env

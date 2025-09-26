@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/FinTrackAI
+    username: fintrack
+    password: fintrack
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+  server:
+    port: 8080
+  
+  logging:
+    level:
+      org.springframework: INFO
+      com.agron.FintrackAI: DEBUG
